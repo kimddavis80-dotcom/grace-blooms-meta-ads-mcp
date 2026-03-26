@@ -1,0 +1,12 @@
+{
+  "name": "grace-blooms-meta-ads-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "meta-ads-mcp": "latest",
+    "supergateway": "latest"
+  },
+  "scripts": {
+    "start": "npx supergateway --stdio 'npx meta-ads-mcp' --port 8080 --host 0.0.0.0"
+  }
+}
