@@ -1,9 +1,9 @@
-FROM python:3.11-slim
+FROM node:20-slim
 
 WORKDIR /app
 
-RUN pip install --no-cache-dir meta-ads-mcp
+RUN npm install -g meta-ads-mcp
 
 EXPOSE 8080
 
-CMD ["python", "-m", "meta_ads_mcp", "--transport", "streamable-http", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["meta-ads-mcp", "--transport", "streamable-http", "--host", "0.0.0.0", "--port", "8080"]
